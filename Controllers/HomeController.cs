@@ -41,16 +41,16 @@ public class HomeController : Controller
         };
 
         if (policy.policyType == "home") {
-            policyModel.premiumAmount = "300";
+            policyModel.premiumAmount = "400";
         }
         else if (policy.policyType == "health") {
-            policyModel.premiumAmount = "200";
+            policyModel.premiumAmount = "500";
         }
         else if (policy.policyType == "travel") {
             policyModel.premiumAmount = "100";
         }
         else if (policy.policyType == "auto") {
-            policyModel.premiumAmount = "500";
+            policyModel.premiumAmount = "400";
         }
 
         await _context.Policies.AddAsync(policyModel);
