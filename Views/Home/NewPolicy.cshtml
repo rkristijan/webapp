@@ -1,0 +1,50 @@
+@model PolicyModel
+
+@{
+    ViewData["Title"] = "New Policy";
+}
+
+<h1>Create new policy</h1>
+
+<div class="container mt-5">
+    <div class="row justify-content-left">
+        <div class="col-sm-3">
+            <form asp-action="NewPolicy" enctype="multipart/form-data">
+                <div class="form-group">
+
+                    <label asp-for="insurerName" class="control-label">InsurerName</label>
+                    <input asp-for="insurerName" class="form-control" required />
+
+                </div>
+                <br />
+                <div class="form-group">
+                    <label asp-for="policyType">Policy Type:</label>
+                    <select class="form-control" asp-for="policyType">
+                        <option value="auto">Auto Insurance</option>
+                        <option value="health">Health Insurance</option>
+                        <option value="home">Home Insurance</option>
+                        <option value="travel">Travel Insurance</option>
+                    </select>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label asp-for="startDate">Start Date:</label>
+                    <input type="date" class="form-control" asp-for="startDate">
+                </div>
+                <br />
+                <div class="form-group">
+                    <label asp-for="endDate">End Date:</label>
+                    <input type="date" class="form-control" asp-for="endDate">
+                </div>
+                <br />               
+                <button type="submit" class="btn btn-primary">Create Policy</button>
+            </form>
+        </div>
+    </div>
+
+    <br/>
+
+    <div>
+        <a asp-controller="Home" asp-action="Summary">To Policy summary</a>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+version: '3.4'
+
+networks:
+  webappNetwork:
+
+services:
+  webappDatabase:
+    container_name: databasecontainer
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+      - "8081:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Passw0rd
+    networks:
+      - webappNetwork
+  webapp:
+    container_name: webappContainer
+    image: rkristijan/webapp
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - webappDatabase
+    environment:
+      - dbHost=webappDatabase
+      - dbName=webappDB
+      - dbSaPassword=Passw0rd
+      - ASPNETCORE_URLS=http://+:80
+    networks:
+      - webappNetwork
