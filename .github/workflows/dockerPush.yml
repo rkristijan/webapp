@@ -2,7 +2,7 @@ name: Build and push image
 
 on:
    push:
-       branches: [ master ]
+       branches: [ main ]
 
 jobs:
  build-and-push:
@@ -20,6 +20,6 @@ jobs:
   - name: Build and push
     uses: docker/build-push-action@v4
     with:
-     context: ./policyApp/policyApp
+     context: .
      push: true
-     tags: ${{secrets.DOCKER_USER_NAME}}/policyapp:latest
+     tags: ${{secrets.DOCKER_USER_NAME}}/webapp:latest
