@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Desktop\\webapp\\webapp.csproj": {}
+    "D:\\Desktop\\webapp\\webapp.csproj": {}
   },
   "projects": {
-    "d:\\Desktop\\webapp\\webapp.csproj": {
+    "D:\\Desktop\\webapp\\webapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Desktop\\webapp\\webapp.csproj",
+        "projectUniqueName": "D:\\Desktop\\webapp\\webapp.csproj",
         "projectName": "webapp",
-        "projectPath": "d:\\Desktop\\webapp\\webapp.csproj",
+        "projectPath": "D:\\Desktop\\webapp\\webapp.csproj",
         "packagesPath": "C:\\Users\\Ristovski\\.nuget\\packages\\",
-        "outputPath": "d:\\Desktop\\webapp\\obj\\",
+        "outputPath": "D:\\Desktop\\webapp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ristovski\\AppData\\Roaming\\NuGet\\NuGet.Config",

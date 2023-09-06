@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VlKbBI+pIWkH+vjKXRGpodKDayCThm3Dfy6igS+1SpkhCzry3Rxh8lrVNw2ufEXMuO6q8JzjIUHXaqAsj+MO4Q==",
+  "dgSpecHash": "7yssM10olmoi8G/ebFsKIBwRQJVD6McI/0E15TT1XLpnAjfydjdpS/xRRO0000z8RUefNbQn40rM4HNK6uny/g==",
   "success": true,
-  "projectFilePath": "d:\\Desktop\\webapp\\webapp.csproj",
+  "projectFilePath": "D:\\Desktop\\webapp\\webapp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ristovski\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Ristovski\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
