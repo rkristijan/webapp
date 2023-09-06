@@ -2,6 +2,7 @@
 kind: PersistentVolumeClaim
 metadata:
   name: database-claim
+  namespace: webapp-namespace
 spec:
   accessModes:
     - ReadWriteMany
