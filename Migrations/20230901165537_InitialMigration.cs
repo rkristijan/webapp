@@ -21,7 +21,6 @@ namespace webapp.Migrations
                     startDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     endDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     premiumAmount = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    serialNumber = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {

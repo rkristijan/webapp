@@ -52,8 +52,6 @@ public class HomeController : Controller
         return id;
     }
     
-    
-
     public IActionResult Index()
     {
         return View();

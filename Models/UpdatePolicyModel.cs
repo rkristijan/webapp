@@ -16,3 +16,4 @@ public class UpdatePolicyModel {
 
     public string premiumAmount { get; set; }
 }
+

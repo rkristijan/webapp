@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using webapp.Data;
 
 //Data seed, create database if it doesn't exist
+
 namespace webapp.Models{
     public static class DbPrep{
         public static void Preparation(IApplicationBuilder builder){
@@ -15,3 +16,4 @@ namespace webapp.Models{
         }
     }
 }
+

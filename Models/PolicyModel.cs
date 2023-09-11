@@ -4,7 +4,9 @@ namespace webapp.Models
     {
 
         public Guid Id { get; set; }
+        
         public string serialNumber { get; set; }
+        
         public string insurerName { get; set; }
 
         public string policyType { get; set; }
@@ -17,3 +19,5 @@ namespace webapp.Models
 
     }
 }
+
+
