@@ -13,6 +13,8 @@ var dbSaPassword = Environment.GetEnvironmentVariable("dbSaPassword");
 
 var connectionString = $"Data Source={dbHost}; Initial Catalog= {dbName}; User ID=sa; Password={dbSaPassword}; TrustServerCertificate=True";
 
+//var connectionString = "Server=localhost\\SQLEXPRESS01;Database=webappDb;Trusted_Connection=True; TrustServerCertificate=True;";
+
 builder.Services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(connectionString));
 var app = builder.Build();
 

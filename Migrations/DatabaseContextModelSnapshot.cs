@@ -43,6 +43,10 @@ namespace webapp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("serialNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("startDate")
                         .HasColumnType("datetime2");
 

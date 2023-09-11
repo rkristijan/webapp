@@ -1,7 +1,40 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model List<PolicyModel> 
 @{
 }
 
 <h1>Policy summary</h1>
+
+<br/>
+
+@if (Model.Count > 0) {
+    
+    <table class="table table-bordered">
+    
+        <thead>
+        <tr>
+            <th>Serial Number</th>
+            <th>Insurer Name</th>
+            <th>Policy Type</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Premium Amount</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var policy in Model) {
+            <tr>
+                <td>@policy.serialNumber</td>
+                <td>@policy.insurerName</td>
+                <td>@policy.policyType</td>
+                <td>@policy.startDate.ToString("dd.MM.yyyy")</td>
+                <td>@policy.endDate.ToString("dd.MM.yyyy")</td>
+                <td>@policy.premiumAmount</td>
+                <td><a class="btn btn-primary btn-sm" href="/Home/Edit/@policy.Id">Edit</a></td>
+            </tr>
+        }
+        </tbody>
+    
+    </table>
+    
+}
+
