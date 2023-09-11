@@ -20,6 +20,7 @@ var app = builder.Build();
 
 
 DbPrep.Preparation(app);
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
