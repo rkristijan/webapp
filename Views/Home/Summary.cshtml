@@ -18,8 +18,8 @@
             <th>Policy Type</th>
             <th>Start Date</th>
             <th>End Date</th>
-            <th>Premium Amount</th>
-            <th></th>
+            <th class="border-end">Premium Amount</th>
+            <th class="border-0"></th>
         </tr>
         </thead>
         <tbody>
@@ -31,7 +31,7 @@
                 <td>@policy.startDate.ToString("dd.MM.yyyy")</td>
                 <td>@policy.endDate.ToString("dd.MM.yyyy")</td>
                 <td>@policy.premiumAmount</td>
-                <td><a class="btn btn-primary btn-sm" href="/Home/Edit/@policy.Id">Edit</a></td>
+                <td><a class="btn btn-primary btn-sm border-top" href="/Home/Edit/@policy.Id">Edit</a></td>
             </tr>
         }
         </tbody>
