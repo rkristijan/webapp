@@ -12,13 +12,13 @@
     <table class="table table-bordered">
     
         <thead>
-        <tr>
-            <th>Serial Number</th>
-            <th>Insurer Name</th>
-            <th>Policy Type</th>
-            <th>Start Date</th>
-            <th>End Date</th>
-            <th class="border-end">Premium Amount</th>
+        <tr class="border-top-0">
+            <th class="border-top">Serial Number</th>
+            <th class="border-top">Insurer Name</th>
+            <th class="border-top">Policy Type</th>
+            <th class="border-top">Start Date</th>
+            <th class="border-top">End Date</th>
+            <th class="border-top">Premium Amount</th>
             <th class="border-0"></th>
         </tr>
         </thead>
@@ -31,7 +31,7 @@
                 <td>@policy.startDate.ToString("dd.MM.yyyy")</td>
                 <td>@policy.endDate.ToString("dd.MM.yyyy")</td>
                 <td>@policy.premiumAmount</td>
-                <td><a class="btn btn-primary btn-sm border-top" href="/Home/Edit/@policy.Id">Edit</a></td>
+                <td><a class="btn btn-primary border-top m-auto" href="/Home/Edit/@policy.Id">Edit</a></td>
             </tr>
         }
         </tbody>
